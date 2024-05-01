@@ -21,6 +21,11 @@ export default function Game() {
       setRandomNumber2(2);
       return;
     }
+    if (clickCount === 1) {
+      setRandomNumber(1);
+      setRandomNumber2(18);
+      return;
+    }
 
     // add here for fixing number
     // eg:-
@@ -30,7 +35,7 @@ export default function Game() {
     //   return;
     // }
 
-    
+
     if (usedNumbers.size === 68) {
       alert("No Senior left!");
       return;
