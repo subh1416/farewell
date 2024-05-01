@@ -47,13 +47,13 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
 
   const generateRandomNumber = () => {
-    if (usedNumbers.size === 100) {
+    if (usedNumbers.size === 68) {
       alert("No numbers left!");
       return;
     }
     let newRandomNumber;
     do {
-      newRandomNumber = Math.floor(Math.random() * 100) + 1;
+      newRandomNumber = Math.floor(Math.random() * 68) + 1;
     } while (usedNumbers.has(newRandomNumber));
 
     setRandomNumber(newRandomNumber);

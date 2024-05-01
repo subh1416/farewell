@@ -19,13 +19,13 @@ export default function Game() {
   const [usedNumbers2, setUsedNumbers2] = useState(new Set());
 
   const generateRandomNumber = () => {
-    if (usedNumbers.size === 5) {
+    if (usedNumbers.size === 68) {
       alert("No Senior left!");
       return;
     }
     let newRandomNumber;
     do {
-      newRandomNumber = Math.floor(Math.random() * 5) + 1;
+      newRandomNumber = Math.floor(Math.random() * 68) + 1;
     } while (usedNumbers.has(newRandomNumber));
 
     setRandomNumber(newRandomNumber);
@@ -35,7 +35,7 @@ export default function Game() {
 
     let newRandomNumber2;
     do {
-      newRandomNumber2 = Math.floor(Math.random() * 5) + 1;
+      newRandomNumber2 = Math.floor(Math.random() * 68) + 1;
     } while (usedNumbers2.has(newRandomNumber2) || newRandomNumber === newRandomNumber2); // Ensure the second number is different
 
     setRandomNumber2(newRandomNumber2);
