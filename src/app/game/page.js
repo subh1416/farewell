@@ -26,6 +26,11 @@ export default function Game() {
       setRandomNumber2(18);
       return;
     }
+    if (clickCount === 2) {
+      setRandomNumber(7);
+      setRandomNumber2(25);
+      return;
+    }
 
     // add here for fixing number
     // eg:-
